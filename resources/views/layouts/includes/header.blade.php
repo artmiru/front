@@ -11,7 +11,7 @@
         <div>1 минута от м. Звенигородская</div>
     </div>
 
-    <div class="sm:col-span-2 text-2xl sm:text-2xl leading-7 sm:leading-8 sm:self-center">
+    <div class="sm:col-span-2 text-xl sm:text-2xl leading-6 sm:leading-8 sm:self-center text-center">
         Обучение рисованию и живописи взрослых <span class="whitespace-nowrap">в Санкт-Петербурге</span>
     </div>
 
