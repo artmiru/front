@@ -29,4 +29,5 @@
         </div>
     </div>
     <x-schedule></x-schedule>
+    @include('pages.main.price')
 @endsection

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class PageController extends Controller
 {
@@ -55,7 +56,8 @@ class PageController extends Controller
                 'description' => 'Вы можете приобрести подарочный сертификат на любой курс!',
             ],
         ];
-        return view('pages.main', compact('artCourses'));
+         $coursePrices = DB::table('course_prices')->get();
+        return view('pages.main.index', compact('artCourses','coursePrices'));
     }
 
     public function drawing()
