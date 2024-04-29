@@ -1,14 +1,14 @@
 <div id="schedule" class="py-9">
     <div class="mb-4 flex-col text-center sm:container sm:mx-auto sm:w-10/12">
-        <h2 class="mb-2 text-5xl uppercase">Расписание уроков</h2>
-        <h3 class="mb-8 text-3xl">Выбирайте удобный день и время, и приходите учиться рисовать!</h3>
+        <h2 class="mb-2 sm:text-5xl uppercase text-2xl">Расписание уроков</h2>
+        <h3 class="mb-8 text-xl sm:text-3xl">Выбирайте удобный день и время, и приходите учиться рисовать!</h3>
         <div class="grid gap-3 sm:grid-cols-3">
-            <div class="text-left text-xl sm:col-span-2">Записываться можно в любую группу, где есть свободные места.
+            <div class="text-left text-xl sm:col-span-2 px-3">Записываться можно в любую группу, где есть свободные места.
                 Преподаватель объясняет каждому ученику его задания индивидуально, поэтому начинать можно в любой день и
                 выбрать
                 для себя наиболее удобный график занятий.</div>
             <div class="mb-3 flex-col space-y-2.5 rounded bg-gray-50 p-5">
-                <h4 class="sm:text-xl">Записывайтесь на уроки заранее:</h4>
+                <h4 class="text-xl">Записывайтесь на уроки заранее:</h4>
                 <div class="flex justify-center text-white">
                     <a class="flex items-center rounded-l bg-blue-400 px-4 py-1 hover:bg-blue-500"
                         href="https://t.me/artmir_zven" target="_blank" rel="noopener noreferrer">
@@ -39,16 +39,6 @@
 
     </div>
     <div id="schedule" class="relative mx-1 overflow-x-auto">
-        <span id="print-btn"
-            class="absolute bottom-0 end-0 border bg-gray-50 p-3 hover:cursor-pointer hover:bg-blue-500 hover:text-white">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                class="bi bi-printer-fill" viewBox="0 0 16 16">
-                <path
-                    d="M5 1a2 2 0 0 0-2 2v1h10V3a2 2 0 0 0-2-2zm6 8H5a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1" />
-                <path
-                    d="M0 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-1v-2a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2H2a2 2 0 0 1-2-2zm2.5 1a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1" />
-            </svg>
-        </span>
         <table class="min-w-full text-center">
             <thead>
                 <tr>
@@ -262,5 +252,15 @@
                 </tr>
             </tbody>
         </table>
+        <span id="print-btn"
+            class="absolute bottom-0 end-0 border bg-gray-50 p-3 hover:cursor-pointer hover:bg-blue-500 hover:text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-printer-fill" viewBox="0 0 16 16">
+                <path
+                    d="M5 1a2 2 0 0 0-2 2v1h10V3a2 2 0 0 0-2-2zm6 8H5a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1" />
+                <path
+                    d="M0 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-1v-2a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2H2a2 2 0 0 1-2-2zm2.5 1a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1" />
+            </svg>
+        </span>
     </div>
 </div>
