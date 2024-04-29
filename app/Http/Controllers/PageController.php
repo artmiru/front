@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use App\Models\Teacher;
 
 class PageController extends Controller
 {
@@ -56,8 +56,14 @@ class PageController extends Controller
                 'description' => 'Вы можете приобрести подарочный сертификат на любой курс!',
             ],
         ];
-         $coursePrices = DB::table('course_prices')->get();
-        return view('pages.main.index', compact('artCourses','coursePrices'));
+        $coursePrices = DB::table('course_prices')->get();
+
+        $teachers = Teacher::with('user') // Eager load the user relationship
+            ->where('status', 1) // Filter by status
+            ->orderBy('created_at', 'desc') // Order by the created_at timestamp
+            ->get(); // Get the results
+
+        return view('pages.main.index', compact('artCourses', 'coursePrices', 'teachers'));
     }
 
     public function drawing()

@@ -30,4 +30,5 @@
     </div>
     <x-schedule></x-schedule>
     @include('pages.main.price')
+    @include('pages.main.teachers')
 @endsection
