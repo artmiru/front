@@ -30,35 +30,45 @@ class UsersTableSeeder extends Seeder
                 'password' => $password, // Use the same hashed password
             ],[
                 'name' => 'Екатерина',
+                'middle_name' => '',
                 'last_name' => 'Муравина',
                 'phone' => '9818887546',
+                'email' => '',
                 'password' => $password, // Use the same hashed password
             ],[
                 'name' => 'Алексей',
                 'middle_name' => 'Викторович',
                 'last_name' => 'Добровольский',
                 'phone' => '9062595116',
+                'email' => '',
                 'password' => $password, // Use the same hashed password
             ],[
                 'name' => 'Илья',
+                'middle_name' => '',
                 'last_name' => 'Злобин',
                 'phone' => '9533444990',
+                'email' => '',
                 'password' => $password, // Use the same hashed password
             ],[
                 'name' => 'Александра',
                 'middle_name' => 'Вильевна',
                 'last_name' => 'Зиннурова',
                 'phone' => '9062283179',
+                'email' => '',
                 'password' => $password, // Use the same hashed password
             ],[
                 'name' => 'Анастасия',
+                'middle_name' => '',
                 'last_name' => 'Кокорева',
                 'phone' => '9050587690',
+                'email' => '',
                 'password' => $password, // Use the same hashed password
             ],[
                 'name' => 'Данил',
+                'middle_name' => '',
                 'last_name' => 'Андреев',
                 'phone' => '9045172507',
+                'email' => '',
                 'password' => $password, // Use the same hashed password
             ],
         ]);
