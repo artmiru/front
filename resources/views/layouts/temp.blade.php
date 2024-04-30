@@ -13,6 +13,7 @@
 <body>
     <header>@include('layouts.includes.header')</header>
     <main>@yield('content')</main>
+    @include('layouts.includes.adres')
     <footer>@include('layouts.includes.footer')</footer>
 </body>
 

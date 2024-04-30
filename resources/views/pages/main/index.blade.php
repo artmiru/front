@@ -20,7 +20,7 @@
                             </div>
                             <div class="w-full self-end sm:py-1">
                                 <button
-                                    class="w-full bg-red-500 py-3 text-base text-white hover:bg-red-500 hover:text-white sm:mx-auto sm:w-auto sm:rounded sm:border sm:border-red-500 sm:bg-white sm:px-8 sm:py-1 sm:text-red-500">Подробнее</button>
+                                    class="w-3/4 bg-red-500 py-3 text-base text-white hover:bg-red-500 hover:text-white sm:mx-auto sm:w-auto sm:rounded sm:border sm:border-red-500 sm:bg-white sm:px-8 sm:py-1 sm:text-red-500 rounded my-5">Подробнее</button>
                             </div>
                         </div>
                     @endforeach
