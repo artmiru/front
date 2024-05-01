@@ -24,12 +24,13 @@ class Teacher extends Model
 
     // If you want to disable mass assignment protection, you can use:
     // protected $guarded = [];
-
-    // Define the relationship with the User model, if there is one
     public function user()
     {
         return $this->belongsTo(User::class, 'user_id');
     }
 
-    // Add any additional model methods or relationships below
+    public function courseschedule()
+    {
+        return $this->hasMany(CourseSchedule::class);
+    } 
 }
