@@ -1,5 +1,6 @@
 <div class="pb-5 bg-stone-50 border-t pt-6">
-    <div class="sm:container sm:w-10/12 flex flex-col space-y-5 items-center sm:flex sm:mx-auto sm:flex-row sm:justify-around sm:items-start sm:border-b sm:pb-3 sm:space-y-0 mb-5">
+    <div
+        class="sm:container sm:w-10/12 flex flex-col space-y-10 items-center sm:flex sm:mx-auto sm:flex-row sm:justify-around sm:items-start sm:border-b sm:pb-3 sm:space-y-0 mb-10 sm:mb-1">
         <div itemtype="http://schema.org/Organization" itemscope="">
             <address class="m-0" style="font-style: normal !important;">
                 <span itemprop="name"><strong>Студия живописи в СПб "АртМир"</strong></span>
@@ -18,7 +19,7 @@
                 <br>
             </address>
         </div>
-        <div class="flex flex-row space-x-3 justify-center">
+        <div class="flex flex-row space-x-8 justify-center">
             <a href="https://instagram.com/artmir_ru" class="text-red-500">
                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
                     class="bi bi-instagram" viewBox="0 0 16 16">
@@ -45,7 +46,7 @@
                 </svg>
             </a>
         </div>
-        <div class="flex flex-col items-center justify-center space-y-3">
+        <div class="flex flex-col items-center justify-center space-y-6 sm:space-y-3">
             <div class="flex">
                 <a class="flex items-center rounded-l bg-blue-400 px-4 py-1 text-white hover:bg-blue-500 sm:py-0"
                     href="https://t.me/artmir_zven" target="_blank" rel="noopener noreferrer">
@@ -68,7 +69,8 @@
                     WhatsApp
                 </a>
             </div>
-            <a class="text-3xl flex flex-row space-x-2 border-b border-dashed border-stone-600 hover:border-0 text-stone-600 hover:text-stone-950" href="tel:+79219076449">
+            <a class="text-3xl flex flex-row space-x-2 border-b border-dashed border-stone-600 hover:border-0 text-stone-600 hover:text-stone-950"
+                href="tel:+79219076449">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                     class="bi bi-telephone-fill h-6 w-6 self-center" viewBox="0 0 16 16">
                     <path fill-rule="evenodd"

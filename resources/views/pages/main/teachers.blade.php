@@ -2,7 +2,7 @@
     <div class="sm:container sm:mx-auto sm:w-10/12">
         <h2 class="text-center text-4xl sm:text-5xl pb-0 mb-3">НАШИ ПРЕПОДАВАТЕЛИ</h2>
         <h3 class="text-center text-2xl pb-10">ВСЕ ПРЕПОДАВАТЕЛИ ИМЕЮТ ВЫСШЕЕ ХУДОЖЕСТВЕННОЕ ОБРАЗОВАНИЕ</h3>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-3">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-5">
             @foreach ($teachers as $teacher)
                 <div class="bg-white sm:rounded sm:border border-y shadow-lg flex flex-col sm:flex-row">
                     <img class="sm:rounded-l w-full sm:w-48 sm:h-48 object-cover"
@@ -14,7 +14,7 @@
                             <p class="line-clamp-3 mb-5 sm:mb-2 ">{{ $teacher->bio }}</p>
                         </div>
                         <button
-                            class="mt-auto rounded px-4 py-3 text-white bg-blue-500 hover:bg-blue-700 hover:text-white sm:w-1/2 self-end mb-3 w-full sm:py-1 sm:mb-0 sm:bg-transparent sm:text-blue-500 sm:border sm:border-blue-500">
+                            class="mt-auto rounded px-4 py-3 text-white bg-blue-500 hover:bg-blue-700 hover:text-white sm:w-min self-end mb-3 w-full sm:py-1 sm:mb-1 sm:bg-transparent sm:text-blue-500 sm:border sm:border-blue-500 sm:px-3 sm:me-2">
                             Подробнее
                         </button>
                     </div>
