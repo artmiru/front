@@ -1,10 +1,10 @@
 <div id="teachers" class="bg-stone-50 pt-12 pb-10 border-y">
     <div class="sm:container sm:mx-auto sm:w-10/12">
         <h2 class="text-center text-4xl sm:text-5xl pb-0 mb-3">НАШИ ПРЕПОДАВАТЕЛИ</h2>
-        <h3 class="text-center text-2xl pb-10">ВСЕ ПРЕПОДАВАТЕЛИ ИМЕЮТ ВЫСШЕЕ ХУДОЖЕСТВЕННОЕ ОБРАЗОВАНИЕ</h3>
+        <h3 class="text-stone-500 text-center text-2xl pb-10">ВСЕ ПРЕПОДАВАТЕЛИ ИМЕЮТ ВЫСШЕЕ ХУДОЖЕСТВЕННОЕ ОБРАЗОВАНИЕ</h3>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-5">
             @foreach ($teachers as $teacher)
-                <div class="bg-white sm:rounded sm:border border-y shadow-lg flex flex-col sm:flex-row">
+                <div class="bg-white sm:rounded-lg sm:overflow-hidden sm:border border-y shadow-lg flex flex-col sm:flex-row">
                     <img class="sm:rounded-l w-full sm:w-48 sm:h-48 object-cover"
                         src="img/teachers/{{ $teacher->user->id }}/01_t.jpg"
                         alt="{{ $teacher->user->name }} {{ $teacher->user->last_name }}">
