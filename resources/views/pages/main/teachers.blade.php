@@ -1,11 +1,11 @@
-<div id="teachers" class="bg-stone-50 py-12 border-y">
+<div id="teachers" class="bg-stone-50 pt-12 pb-10 border-y">
     <div class="sm:container sm:mx-auto sm:w-10/12">
         <h2 class="text-center text-4xl sm:text-5xl pb-0 mb-3">НАШИ ПРЕПОДАВАТЕЛИ</h2>
         <h3 class="text-center text-2xl pb-10">ВСЕ ПРЕПОДАВАТЕЛИ ИМЕЮТ ВЫСШЕЕ ХУДОЖЕСТВЕННОЕ ОБРАЗОВАНИЕ</h3>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-3">
             @foreach ($teachers as $teacher)
-                <div class="bg-white rounded border shadow-lg flex flex-col sm:flex-row">
-                    <img class="rounded-l w-full sm:w-48 sm:h-48 object-cover"
+                <div class="bg-white sm:rounded sm:border border-y shadow-lg flex flex-col sm:flex-row">
+                    <img class="sm:rounded-l w-full sm:w-48 sm:h-48 object-cover"
                         src="img/teachers/{{ $teacher->user->id }}/01_t.jpg"
                         alt="{{ $teacher->user->name }} {{ $teacher->user->last_name }}">
                     <div class="flex flex-col justify-between p-2 flex-grow">
@@ -14,7 +14,7 @@
                             <p class="line-clamp-3 mb-5 sm:mb-2 ">{{ $teacher->bio }}</p>
                         </div>
                         <button
-                            class="mt-auto rounded px-4 py-3 text-white bg-blue-500 hover:bg-blue-700 hover:text-white sm:w-1/2 self-end my-5 w-full sm:py-1 sm:mb-0 sm:bg-transparent sm:text-blue-500 sm:border sm:border-blue-500">
+                            class="mt-auto rounded px-4 py-3 text-white bg-blue-500 hover:bg-blue-700 hover:text-white sm:w-1/2 self-end mb-3 w-full sm:py-1 sm:mb-0 sm:bg-transparent sm:text-blue-500 sm:border sm:border-blue-500">
                             Подробнее
                         </button>
                     </div>
