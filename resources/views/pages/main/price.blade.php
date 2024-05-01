@@ -8,12 +8,15 @@
             <span>по акварели 500 р.</span>
             <span>(материалы на пробный урок предоставляются студией)</span>
         </p>
-        <div class="grid sm:grid-cols-6 gap-3 text-2xl bg-gray-100 sm:bg-white py-3">
+        <div class="flex fllex-col space-y-3 sm:flex-row sm:space-x-5  sm:justify-center sm:items-end">
             @foreach ($coursePrices as $price)
                 @if ($price->price >= 1100)
-                    <div class="rounded border py-2 shadow bg-white">
+                    <div class="sm:text-2xl rounded-lg border-2 py-2 px-6 bg-white text-center">
                         <h4>{{ $price->name }}</h4>
-                        <div class="text-3xl">{{ $price->price }} <span class="text-gray-500">₽</span></div>
+                        <div class="text-3xl flex space-x-2 justify-center">
+                            <span>{{ $price->price }}</span>
+                            <span class="text-gray-500">₽</span>
+                        </div>
                     </div>
                 @endif
             @endforeach
