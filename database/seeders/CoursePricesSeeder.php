@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\CoursePrice;
 
 class CoursePricesSeeder extends Seeder
 {
@@ -13,7 +14,7 @@ class CoursePricesSeeder extends Seeder
      */
     public function run(): void
     {
-       DB::table('course_prices')->insert([
+        $coursePrices = [
             ['name' => 'Пробное бесплатно', 'price' => 0, 'qnt' => 1],
             ['name' => 'Пробное 300', 'price' => 300, 'qnt' => 1],
             ['name' => 'Пробное 500', 'price' => 500, 'qnt' => 1],
@@ -24,6 +25,10 @@ class CoursePricesSeeder extends Seeder
             ['name' => '12 уроков', 'price' => 8900, 'qnt' => 12],
             ['name' => '20 уроков', 'price' => 11000, 'qnt' => 20],
             ['name' => 'Безлимитный', 'price' => 16000, 'qnt' => 30],
-        ]);
+        ];
+
+        foreach ($coursePrices as $coursePrice) {
+            CoursePrice::firstOrCreate($coursePrice);
+        }
     }
 }
