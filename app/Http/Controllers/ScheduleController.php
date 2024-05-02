@@ -66,7 +66,6 @@ class ScheduleController extends Controller
         return 10; // Example: Return a static number of available seats
     }
     
-    
     public function generate(Request $request)
     {
 
