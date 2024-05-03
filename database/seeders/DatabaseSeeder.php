@@ -17,6 +17,8 @@ class DatabaseSeeder extends Seeder
             UsersTableSeeder::class,
             CoursePricesSeeder::class,
             TeachersTableSeeder::class,
+            CourseSeeder::class,
+            PaymentMethodSeeder::class,
         ]);
     }
 }

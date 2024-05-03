@@ -3,12 +3,12 @@
          <h1 class="text-2xl sm:text-6xl mb-2 sm:mb-4">ХУДОЖЕСТВЕННЫЕ КУРСЫ</h1>
          <h2 class="text-xl sm:text-2xl text-gray-400 mb-2 sm:mb-9">ВЫ МОЖЕТЕ ЗАПИСАТЬСЯ НА ЛЮБОЙ ИЗ ЭТИХ КУРСОВ</h2>
          <div class="grid gap-6 sm:grid-cols-3">
-             @foreach ($artCourses as $course)
+             @foreach ($courses as $course)
                  <div
                      class="flex flex-col justify-between border bg-white shadow-lg rounded-lg overflow-hidden pb-3 sm:pb-0">
                      <div>
                          <h3 class="text-2xl my-3">{{ $course['title'] }}</h3>
-                         <img class="mx-auto w-full h-auto rounded-b" src="{{ $course['imageUrl'] }}"
+                         <img class="mx-auto w-full h-auto rounded-b" src="{{ $course['img'] }}"
                              alt="{{ $course['title'] }}">
                          <p class="mx-4 my-2 text-left">{{ $course['description'] }}</p>
                      </div>
