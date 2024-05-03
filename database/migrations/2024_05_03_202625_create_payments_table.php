@@ -15,7 +15,7 @@ return new class extends Migration
             $table->bigInteger('payment_id')->nullable();
             $table->bigInteger('payment_method_id')->constrained();
             $table->integer('amount');
-            $table->string('status', 50)->nullable();
+            $table->string('status', 50)->default('NEW');
             $table->integer('refund_amount')->nullable();
             $table->dateTime('refund_date')->nullable();
             $table->timestamps();
