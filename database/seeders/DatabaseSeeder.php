@@ -15,10 +15,11 @@ class DatabaseSeeder extends Seeder
     {
         $this->call([
             UsersTableSeeder::class,
-            CoursePricesSeeder::class,
+            PaymentMethodSeeder::class,
+            VisitStatusesTableSeeder::class,
             TeachersTableSeeder::class,
             CourseSeeder::class,
-            PaymentMethodSeeder::class,
+            SubscriptionsTableSeeder::class
         ]);
     }
 }
