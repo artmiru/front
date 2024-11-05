@@ -29,8 +29,8 @@ class Teacher extends Model
         return $this->belongsTo(User::class, 'user_id');
     }
 
-    public function courseschedule()
+    public function Schedule()
     {
-        return $this->hasMany(CourseSchedule::class);
-    } 
+        return $this->hasMany(Schedule::class);
+    }
 }

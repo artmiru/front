@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\CourseSchedule;
+use App\Models\Schedule;
 use Carbon\Carbon;
 
 class ScheduleController extends Controller
@@ -15,7 +15,7 @@ class ScheduleController extends Controller
         $endDate = Carbon::now()->addDays(7);
 
         // Получаем расписание на текущую неделю
-        $schedules = CourseSchedule::whereBetween('date', [$startDate, $endDate])
+        $schedules = Schedule::whereBetween('date', [$startDate, $endDate])
             ->orderBy('date')
             ->orderBy('time')
             ->get();
@@ -65,7 +65,7 @@ class ScheduleController extends Controller
         // Replace this with your own logic to calculate available seats for each schedule
         return 10; // Example: Return a static number of available seats
     }
-    
+
     public function generate(Request $request)
     {
 
@@ -119,7 +119,7 @@ class ScheduleController extends Controller
                 }
 
                 // Создайте или обновите запись в расписании
-                CourseSchedule::firstOrCreate([
+                Schedule::firstOrCreate([
                     'date' => $date->format('Y-m-d'),
                     'time' => $time
                 ], [
