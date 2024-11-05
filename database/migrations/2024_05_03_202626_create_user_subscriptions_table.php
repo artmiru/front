@@ -16,10 +16,10 @@ return new class extends Migration {
             $table->foreignId('payment_method_id')->nullable()->constrained('payment_methods')->onDelete('set null');
             $table->tinyInteger('lesson_count')->unsigned()->default(1);
             $table->tinyInteger('lesson_used')->unsigned()->default(0);
-            $table->decimal('paid_amount', 6, 0)->default(0);
-            $table->decimal('total_price', 6, 0);
+            $table->decimal('paid_amount', 6, 0)->unsigned()->default(0);
+            $table->decimal('total_price', 6, 0)->unsigned()->default(0);
             $table->string('certificate_number', 7)->nullable();  // Ограничение длины до 6 символов для сертификатов
-
+            $table->tinyText('notes')->nullable();
             $table->timestamps();
         });
     }
