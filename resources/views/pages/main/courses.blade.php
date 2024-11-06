@@ -5,7 +5,7 @@
          <div class="grid gap-6 sm:grid-cols-3">
              @foreach ($courses as $course)
                  <div
-                     class="flex flex-col justify-between border bg-white shadow-lg rounded-lg overflow-hidden pb-3 sm:pb-0">
+                     class="flex flex-col justify-between border bg-white shadow-lg rounded-none sm:rounded-lg overflow-hidden pb-3 sm:pb-0">
                      <div>
                          <h3 class="text-2xl my-3">{{ $course['title'] }}</h3>
                          <img class="mx-auto w-full h-auto rounded-b" src="{{ $course['img'] }}"

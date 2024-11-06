@@ -2,16 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Subscription;
 use Illuminate\Support\Facades\DB;
 use App\Models\Teacher;
 use App\Models\Course;
-use App\Models\CoursePrice;
 
-class PageController extends Controller
+class MainController extends Controller
 {
     public function index()
-    {  
-        $coursePrices = CoursePrice::all();
+    {
+        $coursePrices = Subscription::where('type', 0)->get();
         $courses = Course::all();
         $teachers = Teacher::with('user') // Eager load the user relationship
             ->where('status', 1) // Filter by status

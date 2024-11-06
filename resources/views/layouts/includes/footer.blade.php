@@ -84,7 +84,7 @@
         Студия живописи в Санкт-Петербурге "АртМир".<br />
         ИП Ярошенко Евсей Олегович ИНН 780104378189 ОГРН 317784700185475
     </p>
-    <div class="flex flex-row space-x-3 justify-center mt-3">
+    <div class="flex flex-col sm:flex-row space-y-3 sm:space-x-3 justify-center mt-3">
         <button class="px-4 py-1 border rounded hover:border-stone-500" data-url="pages/load/PK">Политика
             конфиденциальности</button>
         <button class="px-4 py-1 border rounded hover:border-stone-500" data-url="pages/load/PS">Пользовательское
